@@ -1,0 +1,21 @@
+{
+  "name": "protractor-setup-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Protractor Setup Example",
+  "author": "",
+  "dependencies": {
+  },
+  "scripts": {
+    "clean": "rm phantomjsdriver.log",
+    "postinstall": "selenium-standalone install",
+    "posttest": "npm run clean",
+    "start": "webdriver-manager start",
+    "test": "protractor protractor.conf.js"
+  },
+  "devDependencies": {
+    "selenium-standalone": "^4.9.0"
+  },
+  "keywords": ["protractor", "setup"],
+  "license": "MIT"
+}
